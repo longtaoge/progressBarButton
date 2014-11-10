@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="带有进度条的Button" />
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:gravity="bottom"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        >
+	        <ProgressBar
+	            android:id="@+id/progressBar"
+	            style="?android:attr/progressBarStyleHorizontal"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/aa_button_gray_normal"
+	            android:max="100"
+	            android:progress="0"
+	            android:progressDrawable="@drawable/progress_selector" />
+         <Button
+            android:id="@+id/downLoadBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="下载"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_selector"
+             />
+	    </RelativeLayout>
+    
+</RelativeLayout>
